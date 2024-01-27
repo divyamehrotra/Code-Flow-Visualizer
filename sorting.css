@@ -143,6 +143,9 @@ button{
   height: 35px;
   padding: 10px;
 }
+button:hover{
+  background-color: #ffffff;
+}
 .bottom_btn{
   display: flex;
   justify-content: space-evenly;

@@ -1,3 +1,5 @@
+
+
 function toggleTheme() {
   const body = document.body;
   body.classList.toggle('dark-theme');
@@ -64,9 +66,27 @@ randomize_array.addEventListener("click", function (){
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
-sort_btn.addEventListener("click", function () {
-  HeapSort(unsorted_array);
-});
+
+async function swap(array, i, j, bars) {
+  let temp = array[i];
+  array[i] = array[j];
+  array[j] = temp;
+  bars[i].style.height = array[i] * heightFactor + "px";
+  bars[j].style.height = array[j] * heightFactor + "px";
+  bars[i].style.backgroundColor = "red";
+  bars[j].style.backgroundColor = "red";
+  await sleep(speedFactor);
+
+  for (let k = 0; k < bars.length; k++) {
+    if (k != i && k != j) {
+      bars[k].style.backgroundColor = "#80a0eb";
+    }
+  }
+  //bars[i].innerText = array[i];
+  //bars[j].innerText = array[j];
+  return array;
+}
+
 async function heapify(array, n, i) {
   let bars = document.getElementsByClassName("bar");
   let largest = i;
@@ -109,7 +129,7 @@ function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
 
-/* Set the width of the side navigation to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
