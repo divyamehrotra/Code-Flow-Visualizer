@@ -1,7 +1,8 @@
 * {
     padding: 0;
     margin: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -28,8 +29,7 @@ body {
 
 .container {
     max-width: 100vw;
-    /* background-color: #121212; */
-    /* border: 3px solid #121212; */
+    margin: 0 auto;
 }
 
 .cont {
@@ -40,8 +40,9 @@ body {
 }
 
 .header {
+    width: 100%;
     height: 20px;
-    background-color: rgb(101, 99, 99);
+    background-color: rgb(130, 129, 129);
 }
 
 #title,
@@ -146,11 +147,49 @@ body {
     /* You can adjust the size as needed */
 }
 
-.content{
-    display: flex;
-    flex-wrap: wrap;
-    border: 2px solid rebeccapurple;
-    width: 90%;
-    height: 150px;
-    margin: 50px;
+@media only screen and (max-width: 600px) {
+    .title-container {
+        font-size: 21px;
+        margin: 19px;
+        text-align: justify;
+        margin-right: 6px;
+    }
+
+    #openSidebar {
+        font-size: 35px;
+        margin-top: 25px;
+    }
+    
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.row1 {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
 }

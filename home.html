@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <div class="cont">
 
             <span id="openSidebar" onclick="openNav()"><i class='bx bx-sidebar'></i></span>
-            <div class="title-container data-nosnippet" id="title-container" >
+            <div class="title-container data-nosnippet" id="title-container">
                 <a href="#"></a>
                 <span class="display-1 loading-animation glow">C</span>
                 <span class="display-1 loading-animation glow">O</span>
@@ -37,10 +39,10 @@
                 <span class="display-1 loading-animation glow">R</span>
             </div>
             <div class="theme">
-              <button id="themeToggle" class="toggle-button" onclick="toggleTheme()">
-                  <i class="fas fa-moon"></i>
-              </button>
-          </div>
+                <button id="themeToggle" class="toggle-button" onclick="toggleTheme()">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="./BubbleSort.html">Bubble Sort</a>
@@ -48,30 +50,29 @@
                 <a href="./insertionSort.html">Insertion Sort</a>
                 <a href="./mergeSort.html">Merge Sort</a>
                 <a href="./quickSort.html">Quick Sort</a>
-              </div>
-            </div>
-              
-        </div>
-
-        <div class="content">
-            <div class="col1">
-                <div class="bubble">
-
-                </div>
-                <div class="heap">
-
-                </div>
-                <div class="quick">
-
-                </div>
             </div>
         </div>
 
-        <div class="footer">
+    </div>
 
+    <div class="row1">
+        <div class="column">
+            <div class="card">Bubble Sort <br> Time Complexity : O(n<sup>2</sup>) <br> Space Complexity : O(1)</div>
         </div>
+        <div class="column">
+            <div class="card">Heap Sort <br> Time Complexity : O(n log n) <br> Space Complexity : O(1)</div>
+        </div>
+        <div class="column">
+            <div class="card">Insertion Sort <br> Time Complexity : O(n <sup>2</sup>) <br> Space Complexity : O(1)</div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
     </div>
 
     <script src="home.js"></script>
 </body>
+
 </html>
