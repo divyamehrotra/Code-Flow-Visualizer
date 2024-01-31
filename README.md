@@ -18,7 +18,6 @@ Welcome to the Code-Flow Visualizer! This web application provides an interactiv
 4. **Light and Dark Modes**: Customize your viewing experience by toggling between light and dark modes. Choose the mode that suits your preferences and reduces eye strain.
 
 ## Technologies Used
-
 1.**HTML**: The structure of the web application is defined using HTML, providing a foundation for content presentation.
 
 2. **CSS**: Cascading Style Sheets are utilized for styling and layout, ensuring an aesthetically pleasing and user-friendly interface.
@@ -28,7 +27,6 @@ Welcome to the Code-Flow Visualizer! This web application provides an interactiv
 
 
 ## Getting Started
-
 1.Clone this repository to your local machine.
 
 ` git clone https://github.com/divyamehrotra/Code-Flow-Visualizer `
